@@ -1,4 +1,7 @@
 import Button from "../components/UI/Button"
+import Arrow from "../assets/icons/arrow.svg"
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react"
 
 function Hero() {
 	return (
@@ -11,7 +14,37 @@ function Hero() {
 					Focused on fullstack development while deepening AI & ML
 					knowledge.
 				</p>
-				<Button className="mt-12">View work</Button>
+				<motion.a
+					className="mt-12 inline-block"
+					whileHover="hovered"
+					initial="initial"
+					href="#portfolio"
+				>
+					<Button className="flex items-center gap-2">
+						View work
+						<motion.div className="relative w-4 overflow-hidden">
+							<motion.div
+								variants={{
+									hovered: { y: "-100%" },
+									initial: { y: 0 },
+								}}
+								transition={{ duration: 0.2 }}
+							>
+								<motion.img src={Arrow} alt="Arrow" />
+							</motion.div>
+							<motion.div
+								className="absolute"
+								variants={{
+									hovered: { y: "-100%" },
+									initial: { y: 0 },
+								}}
+								transition={{ duration: 0.2 }}
+							>
+								<motion.img src={Arrow} alt="Arrow" />
+							</motion.div>
+						</motion.div>
+					</Button>
+				</motion.a>
 			</div>
 		</section>
 	)

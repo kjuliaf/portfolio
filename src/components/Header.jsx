@@ -1,19 +1,45 @@
-import logo from "../assets/logo.svg"
+import Logo from "../assets/images/logo.svg"
+import ColorLogo from "../assets/images/color-logo.svg"
+import FlipLink from "./UI/FlipLink.jsx"
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react"
 
 function Header() {
 	return (
 		<header className="section-margin-x my-4 flex items-center justify-between">
-			<img className="w-60" src={logo} alt="Julia Forsberg logo" />
+			<a href="/">
+				<motion.div
+					className="relative inline-block w-55"
+					whileHover="hover"
+					initial="initial"
+				>
+					<img
+						className="w-full"
+						src={Logo}
+						alt="Julia Forsberg logo"
+					/>
+					<motion.img
+						className="absolute top-0 left-0 w-full"
+						src={ColorLogo}
+						alt="Julia Forsberg color logo"
+						variants={{
+							initial: { opacity: 0 },
+							hover: { opacity: 1 },
+						}}
+						transition={{ duration: 0.1 }}
+					/>
+				</motion.div>
+			</a>
 			<nav>
-				<ul className="flex gap-8">
+				<ul className="flex gap-6">
 					<li>
-						<a href="#portfolio">Portfolio</a>
+						<FlipLink href="#portfolio">Portfolio</FlipLink>
 					</li>
 					<li>
-						<a href="#about">About</a>
+						<FlipLink href="#about">About</FlipLink>
 					</li>
 					<li>
-						<a href="#contact">Contact</a>
+						<FlipLink href="#contact">Contact</FlipLink>
 					</li>
 				</ul>
 			</nav>
