@@ -32,7 +32,7 @@ export default function App() {
 				<Hero />
 			</div>
 
-			<main className="relative z-10 mt-[95dvh]">
+			<main className="relative z-10 mt-[95vh]">
 				<Portfolio />
 			</main>
 		</>

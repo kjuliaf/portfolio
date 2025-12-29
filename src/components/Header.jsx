@@ -9,7 +9,7 @@ function Header() {
 		<header className="section-margin-x my-4 flex items-center justify-between">
 			<a href="/">
 				<motion.div
-					className="relative inline-block w-55"
+					className="relative inline-block w-45 md:w-55"
 					whileHover="hover"
 					initial="initial"
 				>
@@ -36,7 +36,7 @@ function Header() {
 				</motion.div>
 			</a>
 			<nav>
-				<ul className="flex gap-6">
+				<ul className="hidden gap-6 sm:flex">
 					<li>
 						<FlipLink href="#portfolio">Portfolio</FlipLink>
 					</li>
