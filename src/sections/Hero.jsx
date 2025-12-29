@@ -9,7 +9,7 @@ function Hero() {
 	return (
 		<section className="hero section-margin-x flex min-h-[80vh] items-center py-12">
 			<div className="relative">
-				<h1 className="text-5xl leading-tight sm:text-6xl md:text-7xl lg:text-8xl">
+				<h1 className="xl-title leading-tight">
 					<span className="flex items-center gap-2 text-nowrap sm:gap-4 lg:gap-6">
 						Hi, I'm Julia.
 						<div className="relative inline-block">

@@ -7,7 +7,7 @@
 }
 
 @theme {
-	--color-primary: #411CEC;
+	--color-primary: #411cec;
 	--color-neutral-100: #faf8f1;
 	--color-neutral-800: #282828;
 	--color-neutral-900: #141413;
@@ -18,6 +18,18 @@
 @layer components {
 	.section-margin-x {
 		@apply px-4 md:px-8 lg:px-12;
+	}
+	.section-padding-y {
+		@apply py-20 md:py-26 lg:py-32;
+	}
+	.xl-title {
+		@apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl;
+	}
+	.lg-title {
+		@apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+	}
+	.md-title {
+		@apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
 	}
 }
 
