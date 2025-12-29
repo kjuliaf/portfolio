@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import "tailwindcss";
+
+@font-face {
+	font-family: "Absans";
+	src: url("../assets/fonts/Absans-Regular.woff") format("woff");
+}
+
+@theme {
+	--color-neutral-100: #faf8f1;
+	--color-neutral-800: #282828;
+	--color-neutral-900: #141413;
+	--font-body: "Inter", sans-serif;
+	--font-heading: "Absans", sans-serif;
+}
+
+@layer components {
+	.section-margin-x {
+		@apply px-4 md:px-8 lg:px-12;
+	}
+}
+
+body {
+	@apply font-body bg-neutral-100 text-neutral-800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-heading;
+}
