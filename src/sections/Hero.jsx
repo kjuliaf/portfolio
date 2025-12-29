@@ -2,11 +2,12 @@ import Button from "../components/UI/Button"
 import Arrow from "../assets/icons/arrow.svg"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react"
+import BgBlur from "../assets/images/bg-blur.png"
 
 function Hero() {
 	return (
 		<section className="hero section-margin-x flex min-h-[85dvh] items-center py-12">
-			<div>
+			<div className="relative">
 				<h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
 					Hi, I'm Julia. <br />A Software Engineer.
 				</h1>
@@ -45,6 +46,11 @@ function Hero() {
 						</motion.div>
 					</Button>
 				</motion.a>
+				<img
+					className="absolute -top-20 -right-20 -z-1"
+					src={BgBlur}
+					alt="Background blur"
+				/>
 			</div>
 		</section>
 	)
