@@ -6,8 +6,8 @@ function Project({ title, description, imageSrc, altText, badges }) {
 		<div className="flex flex-col justify-between gap-6 md:flex-row md:items-center lg:gap-24 lg:px-6">
 			<div className="min-w-80">
 				<h3 className="md-title text-neutral-200">{title}</h3>
-				<p className="mt-4 max-w-160 md:mt-6">{description}</p>
-				<div className="mt-6 flex gap-1 md:mt-8">
+				<p className="mt-2 max-w-160 sm:mt-3 md:mt-5">{description}</p>
+				<div className="mt-5 flex gap-1 md:mt-7">
 					{badges &&
 						badges.map((badgeText, index) => (
 							<Badge key={index} text={badgeText} />

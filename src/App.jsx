@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Header from "./components/Header"
 import Hero from "./sections/Hero"
 import Portfolio from "./sections/Portfolio"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
 	const [scrollY, setScrollY] = useState(0)
@@ -35,6 +36,7 @@ export default function App() {
 			<main className="relative z-10 mt-[95vh]">
 				<Portfolio />
 			</main>
+			<Analytics />
 		</>
 	)
 }
