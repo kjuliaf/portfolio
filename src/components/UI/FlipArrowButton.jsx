@@ -17,7 +17,7 @@ function FlipArrowButton({ text, outlined, href, className }) {
 							hovered: { y: "-100%" },
 							initial: { y: 0 },
 						}}
-						transition={{ duration: 0.2 }}
+						transition={{ duration: 0.15 }}
 					>
 						<motion.img src={Arrow} alt="Arrow" />
 					</motion.div>
@@ -27,7 +27,7 @@ function FlipArrowButton({ text, outlined, href, className }) {
 							hovered: { y: "-100%" },
 							initial: { y: 0 },
 						}}
-						transition={{ duration: 0.2 }}
+						transition={{ duration: 0.15 }}
 					>
 						<motion.img src={Arrow} alt="Arrow" />
 					</motion.div>

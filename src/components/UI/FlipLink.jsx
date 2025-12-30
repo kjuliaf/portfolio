@@ -14,7 +14,7 @@ function FlipLink({ children, href }) {
 						hovered: { y: "-100%" },
 						initial: { y: 0 },
 					}}
-					transition={{ duration: 0.2 }}
+					transition={{ duration: 0.15 }}
 				>
 					<motion.div>{children}</motion.div>
 				</motion.div>
@@ -24,7 +24,7 @@ function FlipLink({ children, href }) {
 						hovered: { y: "-100%" },
 						initial: { y: 0 },
 					}}
-					transition={{ duration: 0.2 }}
+					transition={{ duration: 0.15 }}
 				>
 					<motion.div>{children}</motion.div>
 				</motion.div>

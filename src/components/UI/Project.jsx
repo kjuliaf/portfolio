@@ -15,7 +15,7 @@ function Project({ title, description, imageSrc, altText, badges }) {
 				</div>
 				<div className="mt-8 hidden md:mt-12 md:block">
 					<FlipArrowButton
-						text="View case"
+						text="View project"
 						outlined={true}
 						className="border-neutral-200"
 					/>
@@ -29,7 +29,7 @@ function Project({ title, description, imageSrc, altText, badges }) {
 			<div className="md:hidden">
 				<FlipArrowButton
 					className="w-full border-neutral-200"
-					text="View case"
+					text="View project"
 					outlined={true}
 				/>
 			</div>
