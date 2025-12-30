@@ -13,7 +13,7 @@ function Portfolio() {
 				<h2 className="lg-title">Portfolio</h2>
 				<hr className="mt-2 text-neutral-600 md:mt-4" />
 
-				<div className="mt-12 flex flex-col gap-24">
+				<div className="mt-16 flex flex-col gap-24 md:mt-24">
 					<Project
 						title="Glimtin's website"
 						description="Glimtin informs and inspires young women about opportunities in engineering and the technology field."
