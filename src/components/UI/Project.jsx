@@ -1,13 +1,24 @@
+import Badge from "./Badge"
 import FlipArrowButton from "./FlipArrowButton"
 
-function Project({ title, description, imageSrc, altText }) {
+function Project({ title, description, imageSrc, altText, badges }) {
 	return (
 		<div className="flex flex-col justify-between gap-6 md:flex-row md:items-center lg:gap-24 lg:px-6">
 			<div className="min-w-80">
-				<h3 className="md-title">{title}</h3>
+				<h3 className="md-title text-neutral-200">{title}</h3>
 				<p className="mt-4 max-w-160 md:mt-6">{description}</p>
+				<div className="mt-6 flex gap-1 md:mt-8">
+					{badges &&
+						badges.map((badgeText, index) => (
+							<Badge key={index} text={badgeText} />
+						))}
+				</div>
 				<div className="mt-8 hidden md:mt-12 md:block">
-					<FlipArrowButton text="View case" outlined={true} />
+					<FlipArrowButton
+						text="View case"
+						outlined={true}
+						className="border-neutral-200"
+					/>
 				</div>
 			</div>
 			<img
@@ -17,7 +28,7 @@ function Project({ title, description, imageSrc, altText }) {
 			/>
 			<div className="md:hidden">
 				<FlipArrowButton
-					className="w-full"
+					className="w-full border-neutral-200"
 					text="View case"
 					outlined={true}
 				/>

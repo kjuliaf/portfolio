@@ -19,18 +19,21 @@ function Portfolio() {
 						description="Glimtin informs and inspires young women about opportunities in engineering and the technology field."
 						imageSrc={Project1}
 						altText="Screenshot of Glimtin's website"
+						badges={["Frontend", "Web"]}
 					/>
 					<Project
 						title="Habit tracker"
 						description="Fullstack habit tracker with login functionality."
 						imageSrc={Project2}
 						altText="Screenshot of habit tracker"
+						badges={["Fullstack", "Web"]}
 					/>
 					<Project
 						title="Photo gallery"
 						description="Photo gallery with CMS integration."
 						imageSrc={Project3}
 						altText="Screenshot of photo gallery"
+						badges={["Frontend", "Web"]}
 					/>
 				</div>
 			</div>
