@@ -1,7 +1,7 @@
 import Project from "../components/UI/Project"
 import Project1 from "../assets/images/project1.jpeg"
 import Project2 from "../assets/images/project2.jpg"
-import Project3 from "../assets/images/project3.jpeg"
+import Project3 from "../assets/images/project3.png"
 
 function Portfolio() {
 	return (
