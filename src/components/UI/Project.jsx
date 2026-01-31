@@ -41,7 +41,7 @@ function Project({ title, description, imageSrc, altText, badges, index = 1 }) {
 				whileInView={{ opacity: 1 }}
 				transition={{ duration: 1 }}
 			>
-				<div className="mb-4 flex gap-1">
+				<div className="mb-2 flex gap-1 md:mb-4">
 					{badges &&
 						badges.map((badgeText, index) => (
 							<Badge key={index} text={badgeText} />
@@ -60,7 +60,7 @@ function Project({ title, description, imageSrc, altText, badges, index = 1 }) {
 				</div>
 			</motion.div>
 			<motion.img
-				className={`aspect-3/2 min-w-0 object-cover object-top ${index != 3 ? "md:mb-24" : "md:mb-8"} md:aspect-5/4 md:max-w-140`}
+				className={`aspect-3/2 w-full min-w-0 rounded-xl object-cover object-top ${index != 3 ? "md:mb-24" : "md:mb-8"} md:aspect-5/4 md:max-w-140`}
 				src={imageSrc}
 				alt={altText}
 				initial={{ opacity: 0 }}
