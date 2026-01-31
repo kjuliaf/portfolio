@@ -8,8 +8,8 @@ function Contact() {
 	return (
 		<footer id="contact" className="bg-neutral-900">
 			<div className="section-margin-x section-padding-y">
-				<div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between md:gap-12">
-					<h2 className="xl-title leading-snug text-nowrap text-neutral-100">
+				<div className="mb-2 flex flex-col gap-8 md:flex-row md:items-center md:justify-between md:gap-12">
+					<h2 className="xl-title leading-snug text-neutral-100 sm:text-nowrap">
 						<span className="relative inline-block">
 							<span
 								aria-hidden
@@ -17,12 +17,12 @@ function Contact() {
 							/>
 							Let's
 						</span>{" "}
-						get <br />
-						<span className="ml-18 sm:ml-22 md:ml-26 lg:ml-34">
+						get <br className="hidden sm:block" />
+						<span className="sm:ml-22 md:ml-26 lg:ml-34">
 							in touch
 						</span>
 					</h2>
-					<div className="flex flex-col items-end text-right md:mt-6">
+					<div className="mt-4 flex flex-col sm:-mt-2 sm:items-end sm:text-right md:mt-6">
 						<MediaLink
 							text="kjuliaforsberg@gmail.com"
 							link="mailto:kjuliaforsberg@gmail.com"

@@ -12,20 +12,22 @@ function About() {
 			</p>
 
 			<h3 className="md-title mt-16">Education</h3>
-			<p className="mt-6 lg:mt-8 lg:text-lg">
-				<span className="font-medium">
-					MSE Interaction Technology and Design
-				</span>{" "}
-				(2022-2027)
-			</p>
-			<p className="mt-2 lg:text-lg">
-				<span className="font-medium">B.Sc Computer Science</span>{" "}
-				(2022-2027)
-			</p>
+			<ul className="ml-5 list-disc">
+				<li className="mt-6 lg:mt-8 lg:text-lg">
+					<span className="font-medium">
+						MSE Interaction Technology and Design
+					</span>{" "}
+					(2022-2027)
+				</li>
+				<li className="mt-2 lg:text-lg">
+					<span className="font-medium">B.Sc Computer Science</span>{" "}
+					(2022-2027)
+				</li>
+			</ul>
 
 			<h3 className="md-title mt-16">Technical skills</h3>
-			<div className="mt-6 flex lg:mt-8 lg:text-lg">
-				<p className="w-24 min-w-24 font-medium lg:w-28 lg:min-w-28">
+			<div className="mt-6 ml-1 flex lg:mt-8 lg:text-lg">
+				<p className="w-22 min-w-22 font-medium lg:w-27 lg:min-w-27">
 					Frontend
 				</p>
 				<p>
@@ -34,15 +36,15 @@ function About() {
 				</p>
 			</div>
 
-			<div className="mt-4 flex lg:text-lg">
-				<p className="w-24 min-w-24 font-medium lg:w-28 lg:min-w-28">
+			<div className="mt-4 ml-1 flex lg:text-lg">
+				<p className="w-22 min-w-22 font-medium lg:w-27 lg:min-w-27">
 					Backend
 				</p>
 				<p>Java • Python</p>
 			</div>
 
-			<div className="mt-4 flex lg:text-lg">
-				<p className="w-24 min-w-24 font-medium lg:w-28 lg:min-w-28">
+			<div className="mt-4 ml-1 flex lg:text-lg">
+				<p className="w-22 min-w-22 font-medium lg:w-27 lg:min-w-27">
 					Tools
 				</p>
 				<p>Git • GitHub • GitLab • Docker</p>

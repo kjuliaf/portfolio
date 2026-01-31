@@ -4,7 +4,7 @@ import FlipArrowButton from "../components/UI/FlipArrowButton"
 
 function Hero() {
 	return (
-		<section className="hero section-margin-x flex min-h-[80vh] items-center py-12">
+		<section className="hero section-margin-x flex min-h-[85dvh] items-center py-12">
 			<div className="relative">
 				<h1 className="xl-title leading-tight">
 					<span className="flex items-center gap-2 text-nowrap sm:gap-4 lg:gap-6">
