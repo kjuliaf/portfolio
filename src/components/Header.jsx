@@ -13,7 +13,7 @@ function Header() {
 				<span className="pointer-events-none absolute inset-0 rounded-full bg-white/20 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100"></span>
 			</a>
 			<nav>
-				<ul className="hidden gap-6 sm:flex">
+				<ul className="hidden gap-4 sm:flex">
 					<li>
 						<FlipLink href="#portfolio">Portfolio</FlipLink>
 					</li>

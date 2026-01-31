@@ -13,7 +13,7 @@ function Contact() {
 						<span className="relative inline-block">
 							<span
 								aria-hidden
-								className="absolute inset-[-0.04em] rotate-200 rounded-[100%_60%] border border-neutral-100"
+								className="border-primary-light absolute inset-[-0.04em] rotate-200 rounded-[100%_60%] border"
 							/>
 							Let's
 						</span>{" "}
@@ -44,7 +44,7 @@ function Contact() {
 			<div className="section-margin-x pb-10">
 				<hr className="text-neutral-600" />
 				<p className="mt-3 text-sm text-neutral-600">
-					Copyright © Julia ({getYear()})
+					Copyright © {getYear()} Julia
 				</p>
 			</div>
 		</footer>
