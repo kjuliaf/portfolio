@@ -43,7 +43,7 @@ function Project({ title, description, imageSrc, altText, badges, index = 1 }) {
 						))}
 				</div>{" "}
 				<h3 className="md-title">{title}</h3>
-				<p className="mt-2 max-w-160 text-neutral-200 sm:mt-3 md:mt-5 lg:text-lg">
+				<p className="mt-2 max-w-160 text-lg text-neutral-200 sm:mt-3 md:mt-5 md:text-xl">
 					{description}
 				</p>
 				<div className="mt-8 md:mt-12">
