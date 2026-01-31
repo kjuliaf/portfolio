@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Hero from "./sections/Hero"
 import Portfolio from "./sections/Portfolio"
 import About from "./sections/About"
+import Contact from "./sections/Contact"
 import { Analytics } from "@vercel/analytics/react"
 import { ReactLenis } from "lenis/react"
 
@@ -38,6 +39,7 @@ export default function App() {
 			<main className="relative z-10 mt-[97vh]">
 				<Portfolio />
 				<About />
+				<Contact />
 			</main>
 			<Analytics />
 		</>

@@ -5,7 +5,12 @@ import { motion } from "motion/react"
 
 function Project({ title, description, imageSrc, altText, badges, index = 1 }) {
 	return (
-		<div className="flex flex-col-reverse gap-6 md:flex-row md:items-stretch md:justify-between lg:gap-12">
+		<motion.div
+			className="flex flex-col-reverse gap-6 md:flex-row md:items-stretch md:justify-between lg:gap-12"
+			initial={{ opacity: 0.2, y: 20 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.8, delay: 0.1 }}
+		>
 			<div className="hidden self-stretch md:block">
 				<div className="relative h-full">
 					<div className="relative h-full">
@@ -23,23 +28,13 @@ function Project({ title, description, imageSrc, altText, badges, index = 1 }) {
 						<div
 							className={`sticky top-8 mt-8 bg-neutral-900 md:w-22 lg:w-28 ${index != 3 ? "md:mb-30" : "md:mb-16"}`}
 						>
-							<motion.p
-								initial={{ opacity: 0 }}
-								whileInView={{ opacity: 1 }}
-								transition={{ duration: 1 }}
-								className="md:text-7xl lg:text-8xl"
-							>
-								0{index}
-							</motion.p>
+							<p className="md:text-7xl lg:text-8xl">0{index}</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<motion.div
+			<div
 				className={`w-full min-w-80 md:mt-8 ${index != 3 ? "md:mb-24" : "md:mb-8"}`}
-				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
-				transition={{ duration: 1 }}
 			>
 				<div className="mb-2 flex gap-1 md:mb-4">
 					{badges &&
@@ -58,16 +53,13 @@ function Project({ title, description, imageSrc, altText, badges, index = 1 }) {
 						className="w-full border-neutral-200 md:w-fit"
 					/>
 				</div>
-			</motion.div>
-			<motion.img
+			</div>
+			<img
 				className={`aspect-3/2 w-full min-w-0 rounded-xl object-cover object-top ${index != 3 ? "md:mb-24" : "md:mb-8"} md:aspect-5/4 md:max-w-140`}
 				src={imageSrc}
 				alt={altText}
-				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
-				transition={{ duration: 1 }}
 			/>{" "}
-		</div>
+		</motion.div>
 	)
 }
 
