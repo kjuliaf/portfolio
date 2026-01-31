@@ -1,5 +1,5 @@
 import BgBlur from "../assets/images/bg-blur.png"
-import HeroImg from "../assets/images/hero-img.jpg"
+import HeroImg from "../assets/images/hero.png"
 import FlipArrowButton from "../components/UI/FlipArrowButton"
 
 function Hero() {
