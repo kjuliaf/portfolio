@@ -46,7 +46,7 @@ function Project({ title, description, imageSrc, altText, badges, index = 1 }) {
 				<p className="mt-2 max-w-160 text-lg text-neutral-200 sm:mt-3 md:mt-5 md:text-xl">
 					{description}
 				</p>
-				<div className="mt-8 md:mt-12">
+				<div className="mt-8 hidden md:mt-12">
 					<FlipArrowButton
 						text="Learn more"
 						outlined={true}
