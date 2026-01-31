@@ -1,6 +1,21 @@
+import { useState } from "react"
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react"
+
 function About() {
+	const [active, setActive] = useState(false)
+
 	return (
-		<section id="about" className="section-margin-x section-padding-y">
+		<motion.section
+			id="about"
+			className="section-margin-x section-padding-y"
+			onViewportEnter={() => setActive(true)}
+			onViewportLeave={() => setActive(false)}
+			viewport={{ amount: 0.6 }}
+		>
+			<div
+				className={`pointer-events-none absolute inset-0 -z-10 transition-colors duration-2400 ease-[cubic-bezier(0.22,1,0.36,1)] ${active ? "bg-yellow-bg" : "bg-primary-bg"} `}
+			/>
 			<h2 className="lg-title">About</h2>
 			<hr className="mt-2 text-neutral-400 md:mt-4" />
 			<p className="mt-8 text-lg md:text-xl lg:mt-10">
@@ -35,7 +50,7 @@ function About() {
 				</p>
 				<p>Git • GitHub • GitLab • Docker</p>
 			</div>
-		</section>
+		</motion.section>
 	)
 }
 
