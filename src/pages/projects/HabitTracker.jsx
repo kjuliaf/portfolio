@@ -43,7 +43,7 @@ function HabitTracker() {
 
 				<ProjectPageContent
 					title="Result"
-					text="The habit tracker is flexible and personalized where you can choose different frequencies, units and icons for your habits. While the main purpose of the application is to manage and track habits, the application also aims at being intuitive and an ease of mind to use."
+					text="The habit tracker is flexible and personalized where you can choose different frequencies, units and icons for your habits. While the main purpose of the application is to manage and track habits, the application also aims giving you an overview of your persistence and daily focus while being intuitive and an ease of mind to use."
 					img={FocusTimerImg}
 					alt="Focus timer"
 					reverse
