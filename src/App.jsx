@@ -4,10 +4,12 @@ import Home from "./pages/Home"
 import HabitTracker from "./pages/projects/HabitTracker"
 import Glimtin from "./pages/projects/Glimtin"
 import PhotoGallery from "./pages/projects/PhotoGallery"
+import ScrollRestoration from "./components/ScrollRestoration"
 
 export default function App() {
 	return (
 		<BrowserRouter>
+			<ScrollRestoration />
 			<ReactLenis root />
 			<Routes>
 				<Route path="/" element={<Home />} />

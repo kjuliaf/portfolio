@@ -37,10 +37,6 @@
 	}
 }
 
-html {
-	@apply scroll-smooth;
-}
-
 body {
 	@apply font-body bg-neutral-100 text-neutral-800;
 }
