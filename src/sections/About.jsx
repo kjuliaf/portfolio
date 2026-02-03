@@ -21,9 +21,15 @@ function About() {
 			<p className="mt-8 text-lg md:text-xl lg:mt-10">
 				I'm a developer, passionately driven by bringing creative and
 				impactful ideas into life. I enjoy working on challenging
-				problems, designing and implementing intuitive and user-friendly
-				solutions, and continuously learning new skills and
-				technologies.
+				problems, designing and implementing user-centered solutions,
+				and continuously learning new things.
+			</p>
+
+			<p className="mt-5 text-lg md:text-xl lg:mt-7">
+				While currently in my fourth year of MSE in Interaction
+				Technology and design, also pursuing a B.Sc in Computer Science,
+				I'm focusing my elective courses on Artificial Intelligence,
+				Machine Learning, and Deep Learning.
 			</p>
 
 			<h3 className="md-title mt-16">Technical skills</h3>

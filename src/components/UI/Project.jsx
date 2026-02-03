@@ -3,7 +3,15 @@ import FlipArrowButton from "./FlipArrowButton"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react"
 
-function Project({ title, description, imageSrc, altText, badges, index = 1 }) {
+function Project({
+	title,
+	description,
+	imageSrc,
+	altText,
+	badges,
+	index = 1,
+	link,
+}) {
 	return (
 		<motion.div
 			className="flex flex-col-reverse gap-6 md:flex-row md:items-stretch md:justify-between lg:gap-12"
@@ -39,19 +47,25 @@ function Project({ title, description, imageSrc, altText, badges, index = 1 }) {
 				<div className="mb-2 flex gap-1 md:mb-4">
 					{badges &&
 						badges.map((badgeText, index) => (
-							<Badge key={index} text={badgeText} />
+							<Badge
+								key={index}
+								text={badgeText}
+								color={"light"}
+							/>
 						))}
 				</div>{" "}
 				<h3 className="md-title">{title}</h3>
-				<p className="mt-2 max-w-160 text-lg text-neutral-200 sm:mt-3 md:mt-5 md:text-xl">
+				<p className="mt-2 max-w-160 text-lg text-neutral-200 sm:mt-3 md:mt-5 lg:text-xl">
 					{description}
 				</p>
-				<div className="mt-8 hidden md:mt-12">
-					<FlipArrowButton
-						text="Learn more"
-						outlined={true}
-						className="w-full border-neutral-200 md:w-fit"
-					/>
+				<div className="mt-6 md:mt-10 lg:mt-12">
+					<a href={link}>
+						<FlipArrowButton
+							text="Learn more"
+							outlined={true}
+							className="w-full border-neutral-200 md:w-fit"
+						/>
+					</a>
 				</div>
 			</div>
 			<img

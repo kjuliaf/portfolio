@@ -1,47 +1,26 @@
-import { useState, useEffect } from "react"
-import Header from "./components/Header"
-import Hero from "./sections/Hero"
-import Portfolio from "./sections/Portfolio"
-import About from "./sections/About"
-import Contact from "./sections/Contact"
-import { Analytics } from "@vercel/analytics/react"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import { ReactLenis } from "lenis/react"
+import Home from "./pages/Home"
+import HabitTracker from "./pages/projects/HabitTracker"
+import Glimtin from "./pages/projects/Glimtin"
+import PhotoGallery from "./pages/projects/PhotoGallery"
 
 export default function App() {
-	const [scrollY, setScrollY] = useState(0)
-	useEffect(() => {
-		const handleScroll = () => {
-			setScrollY(window.scrollY)
-		}
-
-		window.addEventListener("scroll", handleScroll)
-		return () => window.removeEventListener("scroll", handleScroll)
-	}, [])
-
-	const fadeEnd = window.innerHeight * 0.8
-	const opacity = Math.max(0, 1 - scrollY / fadeEnd)
-	const scale = Math.max(0.8, 1 - (scrollY / fadeEnd) * 0.1)
-
 	return (
-		<>
+		<BrowserRouter>
 			<ReactLenis root />
-			<div
-				className="fixed inset-0 z-0"
-				style={{
-					opacity,
-					scale,
-				}}
-			>
-				<Header />
-				<Hero />
-			</div>
-
-			<main className="relative z-10 mt-[97vh]">
-				<Portfolio />
-				<About />
-				<Contact />
-			</main>
-			<Analytics />
-		</>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route
+					path="/project/habit-tracker"
+					element={<HabitTracker />}
+				/>
+				<Route path="/project/glimtin" element={<Glimtin />} />
+				<Route
+					path="/project/photo-gallery"
+					element={<PhotoGallery />}
+				/>
+			</Routes>
+		</BrowserRouter>
 	)
 }
