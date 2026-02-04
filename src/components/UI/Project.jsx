@@ -59,7 +59,7 @@ function Project({
 					{description}
 				</p>
 				<div className="mt-6 md:mt-10 lg:mt-12">
-					<a href={link}>
+					<a href={link} className="inline-block w-fit">
 						<FlipArrowButton
 							text="Learn more"
 							outlined={true}
