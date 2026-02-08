@@ -27,7 +27,7 @@ function About() {
 
 			<p className="mt-5 text-lg md:text-xl lg:mt-7">
 				While currently in my fourth year of MSE in Interaction
-				Technology and design, also pursuing a B.Sc in Computer Science,
+				Technology and design, also pursuing a BSc in Computer Science,
 				I'm focusing my elective courses on Artificial Intelligence,
 				Machine Learning, and Deep Learning.
 			</p>
@@ -38,8 +38,8 @@ function About() {
 					Frontend
 				</p>
 				<p>
-					JavaScript • TypeScript • React • TailwindCSS • SvelteKit •
-					Next.js • HTML • CSS
+					TypeScript • JavaScript • React • Tailwind CSS • SvelteKit •
+					Next.js
 				</p>
 			</div>
 
