@@ -1,10 +1,11 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { ReactLenis } from "lenis/react"
 import Home from "./pages/Home"
 import HabitTracker from "./pages/projects/HabitTracker"
 import Glimtin from "./pages/projects/Glimtin"
 import PhotoGallery from "./pages/projects/PhotoGallery"
 import ScrollRestoration from "./components/ScrollRestoration"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
 	return (
@@ -23,6 +24,7 @@ export default function App() {
 					element={<PhotoGallery />}
 				/>
 			</Routes>
+			<Analytics />
 		</BrowserRouter>
 	)
 }

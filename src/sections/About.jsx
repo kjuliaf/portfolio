@@ -20,7 +20,7 @@ function About() {
 			<hr className="mt-2 text-neutral-400 md:mt-4" />
 			<p className="mt-8 text-lg md:text-xl lg:mt-10">
 				I'm a developer, passionately driven by bringing creative and
-				impactful ideas into life. I enjoy working on challenging
+				impactful ideas to life. I enjoy working on challenging
 				problems, designing and implementing user-centered solutions,
 				and continuously learning new things.
 			</p>
@@ -47,7 +47,7 @@ function About() {
 				<p className="w-22 min-w-22 text-lg font-medium md:w-27 md:min-w-27 md:text-xl">
 					Backend
 				</p>
-				<p>Java • Python</p>
+				<p>Python • Flask • Java • PostgreSQL </p>
 			</div>
 
 			<div className="mt-4 ml-1 flex items-baseline md:text-lg">
